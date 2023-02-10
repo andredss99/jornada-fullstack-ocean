@@ -37,10 +37,26 @@ async function main() {
         res.send(item);
     });
 
-    app.post("/item", function (req, res) {
+    app.post("/item", async function (req, res) {
         const item = req.body;
-        itens.push(item.nome);
-        res.send("Item criado com sucesso");
+        await collection.insertOne(item);
+        res.send(item);
+    });
+
+    app.put("/item/:id", async function (req, res) {
+        const id = req.params.id;
+        const body = req.body;
+        await collection.updateOne(
+            {_id: new ObjectId(id)},
+            {$set: body}
+        );
+        res.send(body);
+    });
+
+    app.delete("/item/:id", async function (req, res) {
+        const id = req.params.id;
+        await collection.deleteOne({_id: new ObjectId(id)});
+        res.send("OK");
     });
 
     app.listen(3000);
