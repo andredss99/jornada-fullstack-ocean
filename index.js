@@ -31,9 +31,9 @@ async function main() {
         res.send(documentos);
     });
 
-    app.get("/item/:id", function (req, res) {
+    app.get("/item/:id", async function (req, res) {
         const id = req.params.id;
-        const item = itens[id - 1];
+        const item = await collection.findOne({_id: new ObjectId(id)});
         res.send(item);
     });
 
