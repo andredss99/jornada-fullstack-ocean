@@ -1,7 +1,7 @@
 const express = require("express");
-const { MongoClient, CURSOR_FLAGS } = require("mongodb");
+const { MongoClient, CURSOR_FLAGS, ObjectId } = require("mongodb");
 
-const DB_URL = "mongodb+srv://andre:andre123@cluster0.holxi2u.mongodb.net/?retryWrites=true&w=majority";
+const DB_URL = "mongodb+srv://andre:andre123@cluster0.holxi2u.mongodb.net";
 const DB_NAME = "ocean-bancodados-09-02-2023";
 
 async function main() {
