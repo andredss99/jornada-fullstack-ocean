@@ -1,5 +1,9 @@
+import Card from "../Card/Card";
+
 function ReadAll() {
-    return <div>Read All</div>;
+    return (
+        <Card />
+    );
 }
 
 export default ReadAll;
