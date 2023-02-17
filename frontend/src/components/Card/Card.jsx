@@ -2,7 +2,7 @@ function Card() {
     return (
         <div className="card">
             <img src="https://rickandmortyapi.com/api/character/avatar/1.jpeg" alt="" />
-            Rick Sanchez
+            <h1>Rick Sanchez</h1>
         </div>
     )
 }
