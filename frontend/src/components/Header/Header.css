@@ -1,0 +1,25 @@
+header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+    border: 1px solid black;
+    box-shadow: 3px 3px;
+    padding: 1rem;
+}
+
+header img {
+    width: 150px;
+}
+
+header nav {
+    display: flex;
+    gap: 2rem;
+}
+
+header nav > a {
+    background-color: black;
+    color: white;
+    padding: 0.5rem;
+}
