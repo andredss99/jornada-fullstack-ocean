@@ -3,6 +3,16 @@
     border-radius: 1rem;
     margin: 2rem;
     box-shadow: 3px 3px black;
+    max-width: 320px;
+}
+
+.tagContainer {
+    display: flex;
+    justify-content: flex-start;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+    max-width: 100%;
 }
 
 .card > h1 {
