@@ -1,8 +1,12 @@
-function Card() {
+import './Card.css';
+
+function Card(props) {
+    const item = props.item;
+
     return (
         <div className="card">
-            <img src="https://rickandmortyapi.com/api/character/avatar/1.jpeg" alt="" />
-            <h1>Rick Sanchez</h1>
+            <img src={props.item.imagemUrl} alt="" />
+            <h1>{props.item.nome}</h1>
         </div>
     )
 }
