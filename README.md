@@ -1,7 +1,10 @@
 <h1 align="center">
     Samsung Ocean - Jornada Fullstack
-    <img src="./logo_ocean.png">
 </h1>
+
+<p align="center">
+    <img src="./logo_ocean.png">
+</p>
 
 [🇺🇸](./README_en.md)
 
