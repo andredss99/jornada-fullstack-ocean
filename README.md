@@ -1,29 +1,64 @@
-Repositório da aula, no GitHub
-https://github.com/paulosalvatore/ocean-jornada-fullstack-fevereiro-23
+<h1 align="center">
+    Samsung Ocean - Jornada Fullstack
+    <img src="./logo_ocean.png">
+</h1>
 
-Miro:
-https://miro.com/app/board/uXjVPr-4uM0=/?share_link_id=152694689598
+[🇺🇸](./README_en.md)
 
-GitHub Paulo Salvatore
-https://github.com/paulosalvatore
+## Sobre
 
-Site do Paulo Salvatore
-https://paulosalvatore.com.br
+Este projeto foi desenvolvido ao longo de quatro semanas em um curso ministrado pelo [Paulo Salvatore](https://github.com/paulosalvatore) em parceria com a [Ocean Brasil](https://oceanbrasil.com/). O projeto consiste em uma aplicação fullstack desenvolvida do zero. O back-end oferece uma API para um CRUD enquanto que o front-end recupera os dados do banco através da API e os exibe formatados no navegador.
 
-Discord do Paulo Salvatore
-https://discord.com/invite/BRjMwnCmfk
+```
+├── 📁 backend
+    ├── 📁 node_modules
+    ├── .env.example
+    └── index.js
+└── 📁 frontend
+    ├── 📁 node_modules
+    ├── 📁 public
+    ├── 📁 src
+    └── index.html
+```
 
-Playlist Backend - Canal PauloSalvatore
-https://www.youtube.com/playlist?list=PLzFYWfRVHp5Jx-iNLxhUydXwnYPqmV2MU
+## Tecnologias utilizadas
 
-Preparação para as trilhas
-https://github.com/paulosalvatore/samsung-ocean-preparacao-trilhas
+1. NodeJS
+2. ReactJS
+3. Express
+4. MongoDB
 
-Preparação para backend
-https://github.com/paulosalvatore/samsung-ocean-preparacao-trilhas/raw/main/Samsung%20Ocean%20-%20Prepara%C3%A7%C3%A3o%20(Trilha%20Backend).pdf
+## Instalação e execução
 
-GitPod
-https://gitpod.io/#https://github.com/paulosalvatore/nodejs-clean-template
+### Requisitos
 
-GitPod do projeto atual
-https://gitpod.io/#https://github.com/paulosalvatore/ocean-jornada-fullstack-fevereiro-23
+Para instalar as dependências do projeto e executá-lo na sua máquina, será necessário ter os seguintes programas/pacotes instalados:
+
+1. NodeJS
+2. npm
+3. MongoDB Community Server
+4. MongoDB Compass
+
+---
+
+### Instalação
+
+Para instalar todas as dependências do projeto, navegue até a pasta backend:
+
+`cd backend/`
+
+Em seguida, rode o seguinte comando:
+
+`npm install`
+
+Faça o mesmo para o projeto frontend:
+
+`cd frontend/`
+
+`npm install`
+
+---
+
+### Execução
+
+Abra cada um dos diretórios `backend` e `frontend` em terminais separados e, em cada um deles, rode o comando `npm run dev`
