@@ -4,6 +4,7 @@
     margin: 2rem;
     box-shadow: 3px 3px black;
     max-width: 320px;
+    box-sizing: border-box;
 }
 
 .tagContainer {

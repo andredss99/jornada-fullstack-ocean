@@ -2,6 +2,7 @@ require("dotenv").config();
 
 const express = require("express");
 const { MongoClient, CURSOR_FLAGS, ObjectId } = require("mongodb");
+const cors = require('cors');
 
 const DB_PASSWORD = process.env.DB_PASSWORD;
 const DB_URL = "mongodb+srv://andre:" + DB_PASSWORD + "@cluster0.holxi2u.mongodb.net";
@@ -16,6 +17,8 @@ async function main() {
     const collection = db.collection("itens");
 
     const app = express();
+
+    app.use(cors());
 
     app.use(express.json());
 

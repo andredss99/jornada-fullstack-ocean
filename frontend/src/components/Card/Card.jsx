@@ -3,12 +3,13 @@ import Tag from '../Tag/Tag';
 
 function Card(props) {
     const item = props.item;
+    const tags = item.tags;
 
     return (
         <div className="card">
             <div className="tagContainer">
-                {item.tags.map(function(tag) {
-                    return <Tag description={tag} />;
+                {tags.map(function(tag) {
+                    return <Tag key={'tag-' + tag + '-' + item._id} description={tag} />;
                 })}
             </div>
             <img src={item.imagemUrl} alt="" />
