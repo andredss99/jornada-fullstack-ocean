@@ -6,7 +6,8 @@ function ReadAll() {
     const [itens, setItems] = useState([]);
 
     async function realizarRequisicao() {
-        const url = 'http://localhost:3000/item';
+        //const url = 'http://localhost:3000/item';
+        const url = 'https://jornada-fullstack-ocean-fj06.onrender.com/item';
         const response = await fetch(url);
         const data = await response.json();
 
